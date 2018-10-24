@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Form</title>
+</head>
+<body style="background-color: grey; display: block">
+  <form>
+    <!-- labels the input -->
+    <label>First Name</label>
+    <!-- quick solution to make the form linear -->
+    <br />
+
+    <!-- type text for a basic input -->
+    <!-- the name attribute ids what the input represents while placeholder gives a label in the input box   -->
+    <input type="text" name="firstName" placeholder="First Name" />
+    <br />
+
+    <!-- clickable toggle button  -->
+    <label>Radio</label>
+    <input type="radio" name="radio" />
+    <br />
+
+    <!-- email input box -->
+    <label>Email</label>
+    <input type="email" name="email" placeholder="email" />
+    <br />
+
+    <!-- password box with hidden characters -->
+    <label>Password</label>
+    <input type="password" name="password" placeholder="password" /> 
+    <br />
+
+    <label>Dropdown</label>
+    <!-- drowdown selection  -->
+    <select name="edu">
+      <option value="ns">North School</option>
+      <option value="ss">South school</option>
+      <option value="es">East School</option>
+      <option value="ws">West School</option>
+      <option value="nes">northwest school</option>
+      <!-- option*5 tab to make multiple options -->
+    </select>
+    <br />
+
+    <!-- textbox that holds a lot of characters -->
+    <label>Textarea</label>
+
+    <!-- rows and cols changes sizes besides using the width and height -->
+    <textarea rows="25" cols="50" name="tweet" placeholder="bio"></textarea>
+    <br />
+
+    <!-- makes a selectable Calendar -->
+    <label>Calendar</label>
+    <input type="date" name="timeOfYear" />
+    <br />
+
+    <!-- <input type="submit" />  or use below to submit a form -->
+    <!-- buttons are recommended because of their stylability  -->
+    <button type="submit">Apply</button>
+
+    <!-- click handler to have a lart popup, JS preview -->
+    <button type="button" onclick="alert('Hello world!')">Click here</button>
+  </form>
+</body>
+</html>
